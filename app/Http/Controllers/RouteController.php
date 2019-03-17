@@ -14,7 +14,13 @@ class RouteController extends Controller
      */
     public function index()
     {
-        $routes = Route::paginate(5);
+        // check if there is more than 0 in the collection
+        $countRoute = Route::all()->count();
+        if($countRoute == 0){
+        }
+        else{
+            $routes = Route::all();
+        }
         return view('Routes.index', compact('routes')) ;  //   //
     }
 

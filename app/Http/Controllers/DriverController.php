@@ -16,8 +16,12 @@ class DriverController extends Controller
      */
     public function index()
     {
-
-        $drivers = Driver::all();
+        // check if there is more than 0 in the collection
+        $countDriver = Driver::all()->count();
+        if ($countDriver == 0) {
+        } else {
+            $drivers = Route::all();
+        }
         return view('Drivers.index', compact('drivers'));  //
     }
 
@@ -39,16 +43,14 @@ class DriverController extends Controller
             ->groupBy('route_id')
             ->get();
         $LessThanFive = array();
-        foreach ($driver as $drivers)
-        {
-            if($drivers->count < 5)
-            {
+        foreach ($driver as $drivers) {
+            if ($drivers->count < 5) {
                 array_push($LessThanFive, $drivers->route_id);
             }
 
         }
 
-        return view('drivers.create',  compact('LessThanFive'));
+        return view('drivers.create', compact('LessThanFive'));
         //
     }
 
@@ -62,7 +64,7 @@ class DriverController extends Controller
     public function store(Request $request)
     {
 
-        $this->validate($request,[
+        $this->validate($request, [
 
             'title' => 'required|max:50',
 
@@ -78,7 +80,7 @@ class DriverController extends Controller
 
             'phone_number' => 'required|min:12',
 
-        ],[
+        ], [
 
             'title.required' => 'Please enter the drivers\'s title ',
 
@@ -125,7 +127,7 @@ class DriverController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -136,7 +138,7 @@ class DriverController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -148,23 +150,21 @@ class DriverController extends Controller
             ->groupBy('route_id')
             ->get();
         $LessThanFive = array();
-        foreach ($drivers as $Drivers)
-        {
-            if($Drivers->count < 5)
-            {
+        foreach ($drivers as $Drivers) {
+            if ($Drivers->count < 5) {
                 array_push($LessThanFive, $Drivers->route_id);
             }
 
         }
 
-        return view('Drivers.edit', compact('driver','id', 'LessThanFive'));
+        return view('Drivers.edit', compact('driver', 'id', 'LessThanFive'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -196,7 +196,7 @@ class DriverController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
