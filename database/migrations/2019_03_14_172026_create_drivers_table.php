@@ -23,7 +23,7 @@ class CreateDriversTable extends Migration
             $table->string('address');
             $table->string('post_code');
             $table->string('phone_number');
-            $table->foreign('route_id')->references('routes')->on('products');
+            $table->foreign('route_id')->references('routes')->on('route_id');
             $table->timestamps();
         });
     }
