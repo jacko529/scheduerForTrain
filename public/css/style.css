@@ -1,0 +1,5 @@
+/** on the admin panel the scrolling table */
+#scrolltable { margin-top: 20px; height: 400px; overflow: auto; }
+#scrolltable table { border-collapse: collapse; }
+#scrolltable tr:nth-child(even) { background: #EEE; }
+#scrolltable th div { position: absolute; margin-top: -20px; }
