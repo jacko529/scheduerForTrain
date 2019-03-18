@@ -18,3 +18,6 @@ pip install foobar
 
 The application is slightly buggy and does not currently hold the additional added features laid out in the brief.
 
+Remember that when you edit a route or driver you must edit all of their details or it will throw an error.
+
+Also when generating a schedule sometimes an error appears stating outset 10, if this happens just refresh the page.

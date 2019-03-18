@@ -12,6 +12,15 @@ class DriverRouteController extends Controller
 {
 
 
+    /**
+     *
+     * A messy way to make the scheule
+     * messy in the sense that it breaks MVC as this would usually go in the blade file
+     *
+     * This function is called to create each table wanting to be generated
+     * @param $route
+     * @return string
+     */
     public function triggerMerge($route)
     {
 

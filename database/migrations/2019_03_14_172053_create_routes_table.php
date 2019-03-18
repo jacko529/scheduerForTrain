@@ -14,10 +14,12 @@ class CreateRoutesTable extends Migration
     public function up()
     {
         Schema::create('routes', function (Blueprint $table) {
-            $table->integer('route_id')->unsigned();
+            $table->engine = 'InnoDB';
+            $table->string('route_id')->primary();
             $table->string('start_location');
             $table->string('end_location');
             $table->timestamps();
+
         });
     }
 

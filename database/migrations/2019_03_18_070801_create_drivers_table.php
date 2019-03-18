@@ -14,17 +14,20 @@ class CreateDriversTable extends Migration
     public function up()
     {
         Schema::create('drivers', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->bigIncrements('driver_id');
             $table->string('title');
             $table->string('first_name');
             $table->string('surname');
             $table->string('property_number');
             $table->string('first_line_address');
-            $table->string('address');
             $table->string('post_code');
             $table->string('phone_number');
-            $table->foreign('route_id')->references('routes')->on('route_id');
+            $table->string('route_id');
             $table->timestamps();
+            $table->foreign('route_id')->references('route_id')->on('routes')->onDelete('cascade');
+
+
         });
     }
 

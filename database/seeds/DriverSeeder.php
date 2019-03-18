@@ -13,220 +13,6 @@ class DriverSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        $limit = 30;
-
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '5a'
-
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '5a'
-
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '5a'
-
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '5a'
-
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '9b'
-
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '9b'
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '9b'
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '9b'
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '9b'
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '1b'
-
-        ]);
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '1b'
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '1b'
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '1b'
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '1b'
-        ]);
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '2b'
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '2b'
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '2b'
-        ]);
-
-        \Illuminate\Support\Facades\DB::table('drivers')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '2b'
-        ]);
-        \Illuminate\Support\Facades\DB::table('routes')->insert([
-            'title' => $faker->title,
-            'first_name' => $faker->firstName,
-            'surname' => $faker->lastName,
-            'property_number' => $faker->buildingNumber,
-            'first_line_address' => $faker->streetName,
-            'post_code' => $faker->postcode,
-            'phone_number' => $faker->phoneNumber,
-            'route_id' => '2b'
-        ]);
 
         \Illuminate\Support\Facades\DB::table('routes')->insert([
             'route_id' => '2b',
@@ -251,6 +37,220 @@ class DriverSeeder extends Seeder
             'start_location' => 'bournemouth',
             'end_location' => 'poole',
         ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '5a'
+
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '5a'
+
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '5a'
+
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '5a'
+
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '9b'
+
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '9b'
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '9b'
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '9b'
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '9b'
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '1b'
+
+        ]);
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '1b'
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '1b'
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '1b'
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '1b'
+        ]);
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '2b'
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '2b'
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '2b'
+        ]);
+
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '2b'
+        ]);
+        \Illuminate\Support\Facades\DB::table('drivers')->insert([
+            'title' => $faker->title,
+            'first_name' => $faker->firstName,
+            'surname' => $faker->lastName,
+            'property_number' => $faker->buildingNumber,
+            'first_line_address' => $faker->streetName,
+            'post_code' => $faker->postcode,
+            'phone_number' => $faker->phoneNumber,
+            'route_id' => '2b'
+        ]);
+
+
 
     }
 
