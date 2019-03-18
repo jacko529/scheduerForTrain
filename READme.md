@@ -1,5 +1,8 @@
 # Tech test 
 
+The task took me 12 hours over 3 days.
+
+
 This is the scheduling application for Loco express, the application allows the user create new schedules for the drivers.
 
 The approach was that a route would not even enter the sheduler until 5 drivers are allocated. Drivers are allocated
