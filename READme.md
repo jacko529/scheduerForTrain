@@ -11,7 +11,13 @@ When the 'generate timetable' is pressed the table is entered into the database 
 Make sure the first function you do is create database, seed the database, routes must be created before the application works.
 
 ```bash
-pip install foobar
+Create a local database - best example is loco-express (based on mariadb)
+
+php artisan migrate
+
+php artisan db:seed --class=DriverSeeder
+
+register a user
 ```
 
 ## Problems

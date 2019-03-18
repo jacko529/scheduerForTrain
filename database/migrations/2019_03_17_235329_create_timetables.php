@@ -16,8 +16,8 @@ class CreateTimetables extends Migration
         Schema::create('timetables', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->bigIncrements('id');
-            $table->text('timetables');
-            $table->date('date');
+            $table->text('timetable');
+            $table->date('date')->nullable();
             $table->timestamps();
         });
     }
