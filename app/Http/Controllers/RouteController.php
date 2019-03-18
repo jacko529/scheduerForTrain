@@ -17,6 +17,7 @@ class RouteController extends Controller
         // check if there is more than 0 in the collection
         $countRoute = Route::all()->count();
         if($countRoute == 0){
+            $routes = 'There are no routes';
         }
         else{
             $routes = Route::all();

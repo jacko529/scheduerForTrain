@@ -37,14 +37,12 @@ Route::resource('route', 'RouteController');
  */
 
 Route::resource('driver', 'DriverController');
-
-
 /***
  *
  *
  * Driver route 'route'
  */
-Route::get('/driverroute', 'DriverRouteController@lop');
+Route::get('/driverroute', 'DriverRouteController@loopThroughMultipleRoots');
 /**
  *
  * route to save the timetable

@@ -19,6 +19,7 @@ class DriverController extends Controller
         // check if there is more than 0 in the collection
         $countDriver = Driver::all()->count();
         if ($countDriver == 0) {
+            $drivers = 'There are no drivers';
         } else {
             $drivers = Route::all();
         }
