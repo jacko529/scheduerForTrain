@@ -14,6 +14,13 @@ When the 'generate timetable' is pressed the table is entered into the database 
 Make sure the first function you do is create database, seed the database, routes must be created before the application works.
 
 ```bash
+
+copy env file
+
+composer install 
+
+php artisan key:generate
+
 Create a local database - best example is loco-express (based on mariadb)
 
 php artisan migrate

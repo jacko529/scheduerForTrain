@@ -21,9 +21,9 @@ class DriverController extends Controller
         if ($countDriver == 0) {
             $drivers = 'There are no drivers';
         } else {
-            $drivers = Route::all();
+            $drivers = Driver::all();
         }
-        return view('Drivers.index', compact('drivers'));  //
+        return view('drivers.index', compact('drivers'));  //
     }
 
     /**
@@ -158,7 +158,7 @@ class DriverController extends Controller
 
         }
 
-        return view('Drivers.edit', compact('driver', 'id', 'LessThanFive'));
+        return view('drivers.edit', compact('driver', 'id', 'LessThanFive'));
     }
 
     /**
